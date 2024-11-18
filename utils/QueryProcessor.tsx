@@ -19,22 +19,14 @@ export default function QueryProcessor(query: string): string {
     return ( "MiguelGordillo" );
   }
 
-  if (query.toLowerCase().includes("what is 76 plus 60?")) {
-    // TODO añade tu USB ID a continuación
-    // TODO actualiza el caso de prueba correspondiente en __tests__
-    return ( "136" );
-  }
-
   if (query.toLowerCase().includes("what is 22 plus 2?")) {
     // TODO añade tu USB ID a continuación
     // TODO actualiza el caso de prueba correspondiente en __tests__
     return ( "24" );
   }
 
-  let miString = "abcd";
   let num1 = query.substring(8, 10);
   let num2 = query.substring(16, 18);
-
 
   if (query.toLowerCase().includes("what is " + num1 + " plus " + num2 + "?")) {
     let n1 = parseInt(num1, 10)
