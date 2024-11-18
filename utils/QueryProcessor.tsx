@@ -37,7 +37,9 @@ export default function QueryProcessor(query: string): string {
 
 
   if (query.toLowerCase().includes("what is " + num1 + " plus " + num2 + "?")) {
-    const sum = parseInt(num1, 10) + parseInt(num2, 10);
+    let n1 = parseInt(num1, 10)
+    let n2 = parseInt(num2, 10)
+    const sum = n1 + n2;
     return sum.toString();
   } // Otros casos de uso... return "";
 
