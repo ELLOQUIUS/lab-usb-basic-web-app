@@ -13,7 +13,7 @@ export default function QueryProcessor(query: string): string {
     return ( "1810807" );
   }
 
-  if (query.toLowerCase().includes("What is your name?")) {
+  if (query.toLowerCase().includes("what is your name?")) {
     // TODO añade tu USB ID a continuación
     // TODO actualiza el caso de prueba correspondiente en __tests__
     return ( "MiguelGordillo" );
