@@ -50,6 +50,13 @@ export default function QueryProcessor(query: string): string {
     return sum.toString();
   }
 
+  if (query.toLowerCase().includes("what is " + num1 + " minus " + num2 + "?")) {
+    let n1 = parseInt(num1, 10)
+    let n2 = parseInt(num2, 10)
+    const sum = n1 - n2;
+    return sum.toString();
+  }
+
   if (query.toLowerCase().includes("which of the following numbers is the largest: 65, 88, 89?")) {
     // TODO añade tu USB ID a continuación
     // TODO actualiza el caso de prueba correspondiente en __tests__
