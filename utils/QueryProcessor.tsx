@@ -33,12 +33,10 @@ export default function QueryProcessor(query: string): string {
 
   let miString = "abcd";
   let num1 = query.substring(8, 10);
-  let num2 = query.substring(17, 19);
+  let num2 = query.substring(16, 18);
 
 
   if (query.toLowerCase().includes("what is " + num1 + " plus " + num2 + "?")) {
-    alert(num1)
-    alert(num2)
     let n1 = parseInt(num1, 10)
     let n2 = parseInt(num2, 10)
     const sum = n1 + n2;
