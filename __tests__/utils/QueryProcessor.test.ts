@@ -27,11 +27,11 @@ describe("QueryProcessor", () => {
     	));
     });
 
-    test('should return my name', () => {
-        const query = "what is your name?";
+    test('should return my 76 plus 60', () => {
+        const query = "what is 76 plus 60?";
         const response: string = QueryProcessor(query);
         expect(response).toBe((
-		"MiguelGordillo"
+		"136"
     	));
     });
 });
