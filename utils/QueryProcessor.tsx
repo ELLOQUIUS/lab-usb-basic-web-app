@@ -43,12 +43,18 @@ export default function QueryProcessor(query: string): string {
     return sum.toString();
   } // Otros casos de uso... return "";
 
+  num1 = query.substring(8, 10);
+  num2 = query.substring(22, 24);
+
   if (query.toLowerCase().includes("what is " + num1 + " multiplied " + num2 + "?")) {
     let n1 = parseInt(num1, 10)
     let n2 = parseInt(num2, 10)
     const sum = n1 * n2;
     return sum.toString();
   }
+
+  num1 = query.substring(8, 10);
+  num2 = query.substring(17, 19);
 
   if (query.toLowerCase().includes("what is " + num1 + " minus " + num2 + "?")) {
     let n1 = parseInt(num1, 10)
