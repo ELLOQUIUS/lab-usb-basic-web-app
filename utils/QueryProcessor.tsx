@@ -30,5 +30,22 @@ export default function QueryProcessor(query: string): string {
     // TODO actualiza el caso de prueba correspondiente en __tests__
     return ( "24" );
   }
+
+  let miString = "abcd";
+  let num1 = query.substring(8, 10);
+  let num2 = query.substring(17, 19);
+
+
+  if (query.toLowerCase().includes("what is " + num1 + " plus " + num2 + "?")) {
+    const sum = parseInt(num1, 10) + parseInt(num2, 10);
+    return sum.toString();
+  } // Otros casos de uso... return "";
+
+  if (query.toLowerCase().includes("which of the following numbers is the largest: 65, 88, 89?")) {
+    // TODO añade tu USB ID a continuación
+    // TODO actualiza el caso de prueba correspondiente en __tests__
+    return ( "24" );
+  }
+
   return "";
 }
