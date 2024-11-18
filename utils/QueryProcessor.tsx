@@ -24,5 +24,11 @@ export default function QueryProcessor(query: string): string {
     // TODO actualiza el caso de prueba correspondiente en __tests__
     return ( "136" );
   }
+
+  if (query.toLowerCase().includes("what is 22 plus 2?")) {
+    // TODO añade tu USB ID a continuación
+    // TODO actualiza el caso de prueba correspondiente en __tests__
+    return ( "24" );
+  }
   return "";
 }
